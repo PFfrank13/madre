@@ -13,14 +13,14 @@
         /* Variables y configuración ultra avanzada */
         :root {
             --primario: #fff;
-            --fondo: #ffebf2; 
-            --fondo-sobre: #ffe3ed; 
-            --solapa-sobre: #ffccd5; 
-            --cuerpo-sobre: #ffc1d1; 
+            --fondo: #ffebf2;
+            --fondo-sobre: #ffe3ed;
+            --solapa-sobre: #ffccd5;
+            --cuerpo-sobre: #ffc1d1;
             --sombra: rgba(0, 0, 0, 0.2);
-            --texto: #003049; 
+            --texto: #003049;
             --texto-secundario: #615c5f;
-            --corazon: #ff477e; 
+            --corazon: #ff477e;
             --accent-color: #ff85a2;
             --accent-strong: #ff3366;
             --accent-deep: #e91e63;
@@ -38,7 +38,7 @@
             --soft-pink: #fadadd;
             --crimson: #dc143c;
             --diamond-blue: #b9f2ff;
-            
+
             /* Propiedades animadas */
             --rotate: 0deg;
             --gradient-angle: 0deg;
@@ -50,17 +50,17 @@
             --glow-opacity: 0;
             --heart-size: 1;
             --sparkle-opacity: 0;
-            
+
             /* Dimensiones adaptativas */
             --card-width: min(480px, 92vw);
             --card-height: min(340px, 80vw);
-            
+
             /* Tiempos */
             --transition-ultra: 1.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
             --transition-slow: 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
             --transition-medium: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             --transition-fast: 0.3s ease;
-            
+
             /* Modo oscuro */
             --dark-bg: #1a0a13;
             --dark-card: #2c1e26;
@@ -187,7 +187,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
+            background:
                 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="%23ffffff20" d="M25.3,25.3c-7.3,7.3-7.3,19.1,0,26.5c6.8,6.8,18.2,6.8,24.9,0C64.6,37.4,49.7,0,25.3,25.3L25.3,25.3z"/></svg>'),
                 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 100 100"><path fill="%23ffffff15" d="M92.5,50c0,23.5-19,42.5-42.5,42.5C26.5,92.5,7.5,73.5,7.5,50S26.5,7.5,50,7.5C73.5,7.5,92.5,26.5,92.5,50z M23.3,23.3c-7.3,7.3-7.3,19.1,0,26.5c6.8,6.8,18.2,6.8,24.9,0C62.6,35.4,47.7-2,23.3,23.3L23.3,23.3z M50,15c-19.3,0-35,15.7-35,35s15.7,35,35,35s35-15.7,35-35S69.3,15,50,15z"/></svg>');
             background-size: 100px 100px, 200px 200px;
@@ -209,7 +209,7 @@
             border-radius: 30px;
             font-size: 14px;
             font-weight: 600;
-            box-shadow: 
+            box-shadow:
                 0 5px 15px rgba(0,0,0,0.1),
                 0 0 30px rgba(255, 71, 126, 0.3),
                 inset 0 0 10px rgba(255, 255, 255, 0.5);
@@ -229,8 +229,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(var(--gradient-angle), 
-                rgba(255, 71, 126, 0.5), 
+            background: linear-gradient(var(--gradient-angle),
+                rgba(255, 71, 126, 0.5),
                 rgba(255, 133, 162, 0.5));
             border-radius: 30px;
             z-index: -1;
@@ -272,12 +272,12 @@
             border-radius: 30px;
             background: linear-gradient(
                 var(--gradient-angle),
-                rgba(255, 192, 203, 0.7) 0%, 
-                rgba(255, 235, 242, 0.9) 40%, 
+                rgba(255, 192, 203, 0.7) 0%,
+                rgba(255, 235, 242, 0.9) 40%,
                 rgba(255, 174, 192, 0.8) 60%,
                 rgba(255, 145, 175, 0.7) 100%
             );
-            box-shadow: 
+            box-shadow:
                 0 20px 50px -10px rgba(255, 71, 126, 0.6),
                 inset 0 0 30px rgba(255, 255, 255, 0.8),
                 0 0 50px rgba(255, 71, 126, 0.4);
@@ -311,7 +311,7 @@
 
         /* Título principal */
         h1 {
-            font-family: "Great Vibes", cursive; 
+            font-family: "Great Vibes", cursive;
             text-align: center;
             font-size: clamp(50px, 10vw, 85px);
             background: linear-gradient(45deg, #ff3366, #ff85a2, var(--gold), #ff85a2);
@@ -320,7 +320,7 @@
             -webkit-background-clip: text;
             color: transparent;
             animation: gradientText 8s ease infinite, floatTitle 6s ease-in-out infinite;
-            text-shadow: 
+            text-shadow:
                 0px 2px 5px rgba(255, 77, 120, 0.2),
                 0px 0px 10px rgba(255, 255, 255, 0.8);
             position: relative;
@@ -438,11 +438,11 @@
             right: -15px;
             bottom: -15px;
             border-radius: 25px;
-            background: linear-gradient(var(--rotate), 
-                rgba(255,215,0,0.7), 
-                rgba(255,105,180,0.7), 
-                rgba(255,215,0,0.7), 
-                rgba(255,105,180,0.7), 
+            background: linear-gradient(var(--rotate),
+                rgba(255,215,0,0.7),
+                rgba(255,105,180,0.7),
+                rgba(255,215,0,0.7),
+                rgba(255,105,180,0.7),
                 rgba(255,215,0,0.7));
             z-index: -1;
             filter: blur(15px);
@@ -458,9 +458,9 @@
             right: -20px;
             bottom: -20px;
             border-radius: 30px;
-            background: linear-gradient(var(--rotate), 
-                rgba(185, 242, 255, 0.2), 
-                rgba(255, 255, 255, 0.3), 
+            background: linear-gradient(var(--rotate),
+                rgba(185, 242, 255, 0.2),
+                rgba(255, 255, 255, 0.3),
                 rgba(185, 242, 255, 0.2));
             z-index: -2;
             filter: blur(20px);
@@ -472,7 +472,7 @@
         .envoltura-sobre {
             position: relative;
             background-color: rgba(255, 227, 237, 0.95);
-            box-shadow: 
+            box-shadow:
                 0 30px 60px rgba(0, 0, 0, 0.25),
                 0 0 40px rgba(255, 71, 126, 0.4);
             border-radius: 20px;
@@ -496,7 +496,7 @@
         }
 
         .envoltura-sobre:hover {
-            box-shadow: 
+            box-shadow:
                 0 35px 70px rgba(0, 0, 0, 0.3),
                 0 0 50px rgba(255, 71, 126, 0.5);
             transform: translateY(-12px) scale(1.03);
@@ -530,7 +530,7 @@
             transform-origin: top;
             transition: all 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s;
             border-radius: 15px 15px 0 0;
-            background-image: 
+            background-image:
                 linear-gradient(135deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 50%),
                 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="%23ffffff10" d="M25.3,25.3c-7.3,7.3-7.3,19.1,0,26.5c6.8,6.8,18.2,6.8,24.9,0C64.6,37.4,49.7,0,25.3,25.3L25.3,25.3z"/></svg>');
             background-size: 100%, 50px 50px;
@@ -606,7 +606,7 @@
             height: 96%;
             left: 2%;
             background-color: var(--primario);
-            background-image: 
+            background-image:
                 linear-gradient(rgba(255, 194, 209, 0.05) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 194, 209, 0.05) 1px, transparent 1px),
                 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 100 100"><path fill="%23ffcad820" d="M25.3,25.3c-7.3,7.3-7.3,19.1,0,26.5c6.8,6.8,18.2,6.8,24.9,0C64.6,37.4,49.7,0,25.3,25.3L25.3,25.3z"/></svg>');
@@ -641,9 +641,9 @@
             width: 100%;
             height: 100%;
             background: linear-gradient(
-                135deg, 
-                rgba(255, 255, 255, 0) 0%, 
-                rgba(255, 255, 255, 0.6) 50%, 
+                135deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.6) 50%,
                 rgba(255, 255, 255, 0) 100%
             );
             transform: translateX(-100%);
@@ -819,7 +819,7 @@
             font-family: monospace;
             position: relative;
             overflow: hidden;
-            box-shadow: 
+            box-shadow:
                 0 8px 20px rgba(0,0,0,0.08),
                 0 0 0 1px rgba(255, 71, 126, 0.1);
             width: 92%;
@@ -921,7 +921,7 @@
             transition: all var(--transition-ultra) 0.5s;
             z-index: 999;
             cursor: pointer;
-            box-shadow: 
+            box-shadow:
                 0 5px 20px rgba(0, 0, 0, 0.2),
                 0 0 15px rgba(255, 71, 126, 0.8);
             animation: heartbeat 1.5s ease-in-out infinite;
@@ -989,7 +989,7 @@
         /* Brillo alrededor del corazón cuando está abierto */
         .abierto .corazon::before,
         .abierto .corazon::after {
-            box-shadow: 
+            box-shadow:
                 inset 0 0 15px rgba(255, 255, 255, 0.5),
                 0 0 20px rgba(255, 71, 126, 0.5);
         }
@@ -1108,7 +1108,7 @@
         .carta.mostrar-carta {
             transform: translateY(-290px) rotateX(10deg) scale(1.05);
             transition: all var(--transition-ultra);
-            box-shadow: 
+            box-shadow:
                 0 30px 60px rgba(0, 0, 0, 0.25),
                 0 0 30px rgba(255, 71, 126, 0.4);
         }
@@ -1224,14 +1224,24 @@
             animation: spinFlower 15s linear infinite;
         }
 
-        .falling {
+        .falling-container {
             position: fixed;
-            top: -20px;
+            top: 0;
             left: 0;
-            opacity: 0;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
-            z-index: -1;
-            animation: falling linear infinite;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .falling-item {
+            position: absolute;
+            top: -5%;
+            font-size: 20px;
+            opacity: 0;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
 
         /* Elementos decorativos */
@@ -1357,7 +1367,7 @@
             .carta:hover {
                 transform: translateZ(20px);
             }
-            
+
             .emotional:hover::before {
                 animation: pulse 2s infinite;
             }
@@ -1368,59 +1378,59 @@
             :root {
                 --card-height: min(320px, 80vw);
             }
-            
+
             .title-inner {
                 padding: 15px 30px;
             }
-            
+
             h1 {
                 font-size: clamp(40px, 10vw, 60px);
             }
-            
+
             .saludo {
                 font-size: 2em;
                 margin-bottom: 15px;
             }
-            
+
             .contenido {
                 padding: 15px;
                 font-size: clamp(13px, 3.5vw, 15px);
             }
-            
+
             .quote {
                 padding: 12px 15px;
                 margin: 15px 0;
             }
-            
+
             .music-control, .dark-mode-toggle {
                 width: 45px;
                 height: 45px;
             }
-            
+
             .abierto .corazon {
                 transform: translate(-50%, -180%) rotate(45deg) scale(1.5);
             }
-            
+
             .ribbon-top-left span {
                 font-size: 11px;
                 top: 25px;
                 left: -45px;
             }
-            
+
             .sobre::after {
                 font-size: clamp(16px, 4vw, 20px);
                 top: 30px;
             }
-            
+
             .carta.mostrar-carta, .carta.cerrando-carta {
                 transform: translateY(-260px) rotateX(10deg) scale(1.05);
             }
-            
+
             .diamond-wings {
                 left: -20px;
                 width: calc(100% + 40px);
             }
-            
+
             .wing {
                 width: 100px;
                 height: 100px;
@@ -1430,7 +1440,7 @@
         /* Optimizaciones para dispositivos de alta densidad */
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .sobre::before,
-            .solapa-derecha::after, 
+            .solapa-derecha::after,
             .solapa-izquierda::after,
             .carta {
                 background-size: 40px 40px, 40px 40px, 60px 60px;
@@ -1442,20 +1452,20 @@
             .title-inner {
                 padding: 10px 20px;
             }
-            
+
             h1 {
                 font-size: 36px;
             }
-            
+
             .contenido {
                 padding: 12px;
                 font-size: 12px;
             }
-            
+
             .firma {
                 font-size: 1.3em;
             }
-            
+
             .saludo {
                 font-size: 1.8em;
             }
@@ -1466,42 +1476,42 @@
             body {
                 padding: 10px;
             }
-            
+
             .special-day {
                 top: 10px;
                 right: 10px;
             }
-            
+
             .dark-mode-toggle {
                 top: 10px;
                 left: 10px;
             }
-            
+
             .main-container {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 20px;
             }
-            
+
             .title-container {
                 width: 100%;
                 margin-bottom: 5px;
             }
-            
+
             h1 {
                 font-size: clamp(30px, 6vw, 50px);
                 padding: 5px 0;
             }
-            
+
             .contenedor {
                 margin-top: 5px;
             }
-            
+
             .carta.mostrar-carta, .carta.cerrando-carta {
                 transform: translateY(-220px) rotateX(10deg) scale(1.05);
             }
-            
+
             :root {
                 --card-height: min(220px, 60vh);
             }
@@ -1653,22 +1663,45 @@
             100% { transform: rotateY(0deg) rotateX(10deg); }
         }
 
-        @keyframes falling {
-            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
-            10% { opacity: 1; }
-            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        @keyframes falling-left {
+            0% {
+                transform: translateY(0) rotate(0deg) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(105vh) rotate(720deg) translateX(-100px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes falling-right {
+            0% {
+                transform: translateY(0) rotate(0deg) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(105vh) rotate(720deg) translateX(100px);
+                opacity: 0;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="falling-container"></div>
     <div class="custom-cursor"></div>
     <div class="special-day">Día de la Madre <span>2025</span></div>
-    
+
     <div class="decoration top-left">🌸</div>
     <div class="decoration bottom-right">🌹</div>
     <div class="decoration top-right">💕</div>
     <div class="decoration bottom-left">✨</div>
-    
+
     <div class="main-container">
         <div class="title-container">
             <div class="title-inner">
@@ -1681,7 +1714,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="contenedor">
             <div class="premium-border"></div>
             <div class="diamond-border"></div>
@@ -1723,7 +1756,7 @@
                                 Con amor infinito,<br>
                                 Tu hijo que te adora eternamente
                             </div>
-                            
+
                             <p style="font-size: 0.9em; color: grey; margin-top: 15px; text-align: center;">
                                 PD: Desde lo más profundo de mi corazón:
                             </p>
@@ -1751,11 +1784,11 @@
             </div>
         </div>
     </div>
-    
+
     <div class="particles"></div>
     <button class="music-control" title="Reproducir música" aria-label="Reproducir música de fondo">🎵</button>
     <button class="dark-mode-toggle" title="Cambiar tema" aria-label="Cambiar tema de la carta">🌙</button>
-    
+
     <audio id="background-music" loop>
         <source src="https://ia800203.us.archive.org/14/items/tvtunes_17809/A%20Mothers%20Love.mp3" type="audio/mpeg">
     </audio>
@@ -1771,31 +1804,31 @@
         const customCursor = document.querySelector(".custom-cursor");
         const darkModeToggle = document.querySelector(".dark-mode-toggle");
         const sparkles = document.querySelector(".sparkles");
-        
+
         let musicPlaying = false;
         let isDarkMode = false;
         let isDramaticMode = false;
-        
+
         // Posición inicial del ratón
         let mouseX = 0;
         let mouseY = 0;
-        
+
         // Posición actual del cursor personalizado
         let cursorX = 0;
         let cursorY = 0;
-        
+
         // Seguimiento del ratón
         document.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            
+
             // Mostrar el cursor personalizado
             customCursor.style.opacity = "1";
-            
+
             // Verificar si está sobre elementos interactivos
             const target = e.target;
-            if (target.classList.contains('sobre') || 
-                target.classList.contains('corazon') || 
+            if (target.classList.contains('sobre') ||
+                target.classList.contains('corazon') ||
                 target.classList.contains('music-control') ||
                 target.classList.contains('contenido') ||
                 target.classList.contains('dark-mode-toggle')) {
@@ -1808,27 +1841,27 @@
                 customCursor.style.border = "2px solid var(--accent-color)";
             }
         });
-        
+
         // Animación suave del cursor
         function animateCursor() {
             const speed = 0.1; // Ajustar para más/menos suavidad
-            
+
             cursorX += (mouseX - cursorX) * speed;
             cursorY += (mouseY - cursorY) * speed;
-            
+
             customCursor.style.left = `${cursorX}px`;
             customCursor.style.top = `${cursorY}px`;
-            
+
             requestAnimationFrame(animateCursor);
         }
-        
+
         // Para dispositivos táctiles, ocultar el cursor personalizado
         if ('ontouchstart' in window) {
             customCursor.style.display = 'none';
         } else {
             animateCursor();
         }
-        
+
         // Crear estrellas mágicas
         function createMagicStars() {
             const container = document.querySelector('.magic-stars');
@@ -1852,19 +1885,19 @@
         function createParticles() {
             particlesContainer.style.display = 'block';
             particlesContainer.innerHTML = '';
-            
+
             const colors = ['#ff85a2', '#ff477e', '#ffc1d1', '#ffccd5', '#ff2e70', '#fff0f3'];
             const symbols = ['❤️', '✨', '🌸', '💕', '🌹', '💖', '♥️', '🦋', '🌷'];
-            
+
             const rect = corazon.getBoundingClientRect();
             const startX = rect.left + rect.width/2;
             const startY = rect.top;
-            
+
             for (let i = 0; i < 100; i++) {
                 setTimeout(() => {
                     const particle = document.createElement('div');
                     const isEmoji = Math.random() > 0.6;
-                    
+
                     if (isEmoji) {
                         particle.className = 'flower';
                         particle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
@@ -1878,34 +1911,34 @@
                         particle.style.borderRadius = '50%';
                         particle.style.boxShadow = '0 0 10px rgba(255,255,255,0.5)';
                     }
-                    
+
                     // Posición final (aleatoria en la pantalla)
                     const angle = Math.random() * Math.PI * 2;
                     const distance = 50 + Math.random() * 300;
                     const endX = startX + Math.cos(angle) * distance;
                     const endY = startY + Math.sin(angle) * distance - 200;
-                    
+
                     // Establecer variables CSS para la animación
                     particle.style.setProperty('--x', `${endX - startX}px`);
                     particle.style.setProperty('--y', `${endY - startY}px`);
-                    
+
                     // Aplicar posición inicial
                     particle.style.position = 'absolute';
                     particle.style.left = `${startX}px`;
                     particle.style.top = `${startY}px`;
-                    
+
                     particlesContainer.appendChild(particle);
-                    
+
                     // Eliminar partículas después de la animación
                     setTimeout(() => {
                         if (particlesContainer.contains(particle)) {
                             particlesContainer.removeChild(particle);
                         }
                     }, 3000);
-                    
+
                 }, i * 10);
             }
-            
+
             // Ocultar contenedor después de un tiempo
             setTimeout(() => {
                 particlesContainer.style.display = 'none';
@@ -1925,7 +1958,7 @@
                 musicControl.innerHTML = '🔇';
                 musicControl.title = 'Pausar música';
                 musicPlaying = true;
-                
+
                 // Efecto de partículas musical
                 createParticles();
             }
@@ -1975,21 +2008,21 @@
 
         // Manejo de eventos táctiles para dispositivos móviles
         let touchStartTime = 0;
-        
+
         document.addEventListener('touchstart', (e) => {
             touchStartTime = new Date().getTime();
         });
-        
+
         document.addEventListener('touchend', (e) => {
             const touchEndTime = new Date().getTime();
             const touchDuration = touchEndTime - touchStartTime;
-            
+
             // Sólo procesar toques cortos (< 300ms)
             if (touchDuration < 300) {
                 const target = e.target;
-                
+
                 // Verificar si el toque fue en el sobre o sus componentes
-                if (target.closest('.sobre') || 
+                if (target.closest('.sobre') ||
                     target.classList.contains('corazon')) {
                     toggleSobre();
                 }
@@ -2003,12 +2036,12 @@
         // Manejo de eventos del sobre y carta para mouse
         document.addEventListener("click", (e) => {
             // Abrir el sobre
-            if (e.target.matches(".sobre") || 
+            if (e.target.matches(".sobre") ||
                 e.target.matches(".solapa-derecha") ||
                 e.target.matches(".solapa-izquierda") ||
                 e.target.matches(".corazon")) {
                 toggleSobre();
-            } 
+            }
             // Interactuar con la carta
             else if (e.target.closest(".carta") && !e.target.closest(".carta").classList.contains("mostrar-carta")) {
                 toggleCarta();
@@ -2017,11 +2050,11 @@
 
         function toggleSobre() {
             envoltura.classList.toggle("abierto");
-            
+
             if (envoltura.classList.contains("abierto")) {
                 createParticles();
                 envoltura.style.transform = 'rotateY(0) rotateX(0)';
-                
+
                 // Reproducir música automáticamente cuando se abre el sobre
                 if (!musicPlaying) {
                     backgroundMusic.volume = 0.5;
@@ -2040,13 +2073,13 @@
                 setTimeout(() => {
                     carta.classList.remove("mostrar-carta");
                     carta.classList.add("abierta");
-                    
+
                     // Efecto de escritura para el código
                     const codeElement = document.querySelector('code');
                     const originalText = codeElement.textContent;
                     codeElement.textContent = '';
                     let i = 0;
-                    
+
                     const typingEffect = setInterval(() => {
                         if (i < originalText.length) {
                             codeElement.textContent += originalText.charAt(i);
@@ -2073,12 +2106,12 @@
             if (carta.classList.contains("abierta")) {
                 const x = e.clientX - carta.getBoundingClientRect().left;
                 const y = e.clientY - carta.getBoundingClientRect().top;
-                
+
                 const rotateY = (x / carta.offsetWidth - 0.5) * 5;
                 const rotateX = (y / carta.offsetHeight - 0.5) * (-5);
-                
+
                 carta.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-                
+
                 // Efecto de luz
                 const shine = carta.querySelector('.shine-effect');
                 shine.style.opacity = '1';
@@ -2098,18 +2131,48 @@
         // Inicializar efectos visuales
         document.addEventListener('DOMContentLoaded', () => {
             createMagicStars();
-            
+            createFallingItems();
+
             // Animación inicial del sobre
             setTimeout(() => {
                 envoltura.style.animation = 'float 3s ease-in-out infinite';
             }, 1000);
-            
+
             // Detectar si es dispositivo móvil
             if ('ontouchstart' in window) {
                 // Ajustar estilos para móviles
                 document.body.classList.add('mobile-device');
             }
         });
+
+        function createFallingItems() {
+            const container = document.querySelector('.falling-container');
+            const items = ['🌸', '💕', '✨', '💖', '🌹', '❤️'];
+            const itemCount = 30;
+
+            for (let i = 0; i < itemCount; i++) {
+                const item = document.createElement('div');
+                item.classList.add('falling-item');
+                item.textContent = items[Math.floor(Math.random() * items.length)];
+                item.style.left = `${Math.random() * 100}vw`;
+                item.style.fontSize = `${Math.random() * 15 + 10}px`;
+
+                const duration = Math.random() * 5 + 8;
+                const delay = Math.random() * 10;
+
+                item.style.animationName = Math.random() > 0.5 ? 'falling-left' : 'falling-right';
+                item.style.animationDuration = `${duration}s`;
+                item.style.animationDelay = `${delay}s`;
+
+                container.appendChild(item);
+
+                item.addEventListener('animationiteration', () => {
+                    // Reposicionar el elemento para una nueva caída
+                    item.style.left = `${Math.random() * 100}vw`;
+                    item.style.animationDuration = `${Math.random() * 5 + 8}s`;
+                });
+            }
+        }
     </script>
 </body>
 </html>
