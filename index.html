@@ -1224,14 +1224,24 @@
             animation: spinFlower 15s linear infinite;
         }
 
-        .falling {
+        .falling-container {
             position: fixed;
-            top: -20px;
+            top: 0;
             left: 0;
-            opacity: 0;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
-            z-index: -1;
-            animation: falling linear infinite;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .falling-item {
+            position: absolute;
+            top: -5%;
+            font-size: 20px;
+            opacity: 0;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
 
         /* Elementos decorativos */
@@ -1653,14 +1663,37 @@
             100% { transform: rotateY(0deg) rotateX(10deg); }
         }
 
-        @keyframes falling {
-            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
-            10% { opacity: 1; }
-            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        @keyframes falling-left {
+            0% {
+                transform: translateY(0) rotate(0deg) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(105vh) rotate(720deg) translateX(-100px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes falling-right {
+            0% {
+                transform: translateY(0) rotate(0deg) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(105vh) rotate(720deg) translateX(100px);
+                opacity: 0;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="falling-container"></div>
     <div class="custom-cursor"></div>
     <div class="special-day">Día de la Madre <span>2025</span></div>
     
@@ -2098,6 +2131,7 @@
         // Inicializar efectos visuales
         document.addEventListener('DOMContentLoaded', () => {
             createMagicStars();
+            createFallingItems();
             
             // Animación inicial del sobre
             setTimeout(() => {
@@ -2110,6 +2144,35 @@
                 document.body.classList.add('mobile-device');
             }
         });
+
+        function createFallingItems() {
+            const container = document.querySelector('.falling-container');
+            const items = ['🌸', '💕', '✨', '💖', '🌹', '❤️'];
+            const itemCount = 30;
+
+            for (let i = 0; i < itemCount; i++) {
+                const item = document.createElement('div');
+                item.classList.add('falling-item');
+                item.textContent = items[Math.floor(Math.random() * items.length)];
+                item.style.left = `${Math.random() * 100}vw`;
+                item.style.fontSize = `${Math.random() * 15 + 10}px`;
+                
+                const duration = Math.random() * 5 + 8;
+                const delay = Math.random() * 10;
+                
+                item.style.animationName = Math.random() > 0.5 ? 'falling-left' : 'falling-right';
+                item.style.animationDuration = `${duration}s`;
+                item.style.animationDelay = `${delay}s`;
+
+                container.appendChild(item);
+
+                item.addEventListener('animationiteration', () => {
+                    // Reposicionar el elemento para una nueva caída
+                    item.style.left = `${Math.random() * 100}vw`;
+                    item.style.animationDuration = `${Math.random() * 5 + 8}s`;
+                });
+            }
+        }
     </script>
 </body>
 </html>
